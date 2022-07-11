@@ -9,9 +9,9 @@ if (cor.value == 0 || nome.value ==0) {
     var fsex = document.getElementsByName('sex')
     var genero = " "
     if (fsex[0].checked) {
-     res.innerHTML = ` Sua gata se chama ${nome} ! :3 ` 
+     res.innerHTML = ` Sua gata se chama ${nome}! :3 ` 
     } else if (fsex[1].checked) {
-        res.innerHTML = `Seu gato se chama ${nome} ! :3`
+        res.innerHTML = `Seu gato se chama ${nome}! :3`
 
     }
 
