@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body {
+            font: normal 10pt Arial;
+            text-align: center;
+        }
+        #res { color: black;
+            margin-top: 20px;
+            font: normal 13pt Arial;
+        }   
+        
+        
+
+        
+    </style>
+ 
+ 
+    <h1> 
+        PASSAGEM PARA FRONTEIRA BRASILEIRA 
+    </h1>
+   <div id = "apare"> <h2> Preencha seus dados para a verificação: </h2>
+    Nome   <input type="text" id="nick" name="nick"> <br>
+    Idade  <input type="number" id="age" name="age"> <br>
+    País   <input type="text" id="country" name="contry"> <br>
+    <input type="button" value="verificar" onclick="Verificar()">
+    <div id="res"> Resultado
+    <!---- </div>
+    <div id="res"> Resultado
+
+    </div> --->
+  <p>
+    
+  </p>
+    <script>
+
+ function Verificar() {
+    var Nome = document.getElementById('nick').value
+    var Idade = document.getElementById('age').value
+    var País = document.getElementById('country').value 
+  //   var res = document.getElementById('res')
+    
+    // res.innerHTML = res.velue 
+    
+    
+    if (Idade>=18 && País == 'BRASIL') {
+        res.style.color = 'green'
+        res.innerHTML += ` <p>  SUA PASSAGEM FOI LIBERADA! </p> ` 
+ } else { 
+          res.style.color = "red"
+          res.innerHTML += `<p> SUA PASSAGEM FOI BLOQUEADA! </p>`
+
+ }
+}
+      
+    </script>
+    
+</body>
+</html>
